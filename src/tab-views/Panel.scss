@@ -1,0 +1,123 @@
+.content{
+    .row{
+        margin: 0;
+        .tabs{
+            padding: 0 15px;
+        }
+    }
+    .dashboard{
+        padding: 5px;
+        .widgets-panel{
+            background: #ffffff;
+            padding: 1% 1%;
+            position: relative;
+            border: 2px solid rgb(185, 185, 185);
+            border-radius: 1%;
+            .resize-button{
+                opacity: 0.5;
+                bottom: 0;
+                position: absolute;
+                width: 25px;
+                right: 0;
+            }
+            .print-button {
+                opacity: 0.8;
+                top: 0;
+                position: absolute;
+                width: 18px;
+                right: 20px;
+                margin: 4px;
+                cursor: pointer;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+        .container{
+            height: calc(100vh - 167px);
+            position: relative;
+            padding: 0;
+        }
+        .edit{
+            border: 2px dashed #6877fe;
+        }
+        .confirm-bg{
+            height: 100vh;
+            position: fixed;
+            z-index: 1;
+            width: 100%;
+            background: #76747438;
+            .dialog{
+                position: absolute;
+                top: 180px;
+                right: 480px;
+                padding: 44px;
+                background: white;
+                border-radius: 5px;
+                box-shadow: 2px 3px #888888;
+                button{
+                    border: none;
+                    border-radius: 5px;
+                    padding: 10px;
+                    min-width: 100px;
+                    background: #0000ffa1;
+                    color: white;
+                    font-weight: 500;
+                }
+                button[type="Yes"]{
+                    background: #0000ffa1;
+                }  
+                button[type="No"]{
+                    background: #b9b9dfa1;
+                }   
+            }
+        }
+        .button-header-setting{
+            display: flex;
+            justify-content: flex-end;
+            .new, .save{
+                display: flex;
+                margin: 0 10px;
+                padding: 10px 0;
+                color: blue;
+                cursor: pointer;
+                opacity: 0.5;
+                border-radius: 2px;
+                align-items: center;
+                i{
+                    font-size: 20px;
+                    padding: 0 5px;
+                }
+                div{
+                    padding-right: 5px;
+                }
+                &:hover{
+                    opacity: 1;
+                    background: #e3e3e3;
+                }
+            }
+            .setting{
+                margin: 0 10px;
+                padding: 10px 0;
+                color: blue;
+                cursor: pointer;
+                opacity: 0.5;
+                align-items: center;
+                i{
+                    font-size: 20px;
+                    padding: 0 5px;
+                }
+                div{
+                    padding-right: 5px;
+                }
+                &:hover{
+                    opacity: 1;
+                }
+            }
+
+            .unactived{
+                display: none;
+            }
+        }
+    }
+}
